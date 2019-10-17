@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/entries/top" method='POST'>
+        {% for entry in entries %}
+         <p class='content'>{{entry.content}}</p>
+        <button class='like-button'>+{{entry.likes}}</button>
+        <a href="/entries/new"> create </a>
+        <div class='date'>1-14-19</div>
+        {% endfor %}
+    </div>
+    </form>
+</body>
+</html>
