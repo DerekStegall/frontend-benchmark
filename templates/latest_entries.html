@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="base.js" defer></script>
 </head>
 <body>
 
     <div id='entry'>
         {% for entry in entries %}
-        <p id='content'>{{entry.content}}</p>
+        <p class='content'>{{entry.content}}</p>
         <button id='like-button'>+{{entry.likes}}</button>
         <a href="/entries/new"> create </a>
         <div class='date'>1-14-19</div>
