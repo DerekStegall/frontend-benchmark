@@ -9,12 +9,12 @@
 <body>
 
     <div id='entry'>
-
-        {{entries}}
-        <button class='like-button'></button>
-        <span class='likes'>1</span>
+        {% for entry in entries %}
+        <p id='content'>{{entry.content}}</p>
+        <button id='like-button'>+{{entry.likes}}</button>
         <a href="/entries/new"> create </a>
         <div class='date'>1-14-19</div>
+        {% endfor %}
     </div>
     
 </body>
